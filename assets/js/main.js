@@ -19,15 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const path = location.pathname.split('/').pop() || 'index.html';
 
   // fetch and render people for preview and full page
-  fetch('/ALLI_GATORS/assets/data/people.json').then(r=>r.json()).then(data=>{
-    renderPeoplePreview(data);
-    if (path === 'people.html') renderPeopleList(data);
+  console.log('Fetching people data...');
+  fetch('assets/data/people.json').then(r=>r.json()).then(data=>{
+    console.log('People data loaded:', data);
+    renderPeoplePreview(data.filter(p => p.status !== 'alumni'));
+    if (path === 'people.html') {
+      console.log('Rendering full people list...');
+      renderPeopleList(data);
+    }
   }).catch(e=>console.warn('people.json fetch failed', e));
 
   // fetch publications
-  fetch('/ALLI_GATORS/assets/data/publications.json').then(r=>r.json()).then(data=>{
+  console.log('Fetching publications data...');
+  fetch('assets/data/publications.json').then(r=>r.json()).then(data=>{
+    console.log('Publications data loaded:', data);
     renderPubPreview(data);
-    if (path === 'publications.html') renderPubList(data);
+    if (path === 'publications.html') {
+      console.log('Rendering full publications list...');
+      renderPubList(data);
+    }
   }).catch(e=>console.warn('publications.json fetch failed', e));
 
   // contact form - open mail client
@@ -45,11 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('contact-reset')?.addEventListener('click', ()=>contactForm.reset());
   }
 
-  // search & filter handlers
+  // search handler
   const peopleSearch = document.getElementById('people-search');
-  const roleFilter = document.getElementById('role-filter');
-  if (peopleSearch || roleFilter){
-    // handled inside renderPeopleList
+  if (peopleSearch){
+    peopleSearch.addEventListener('input', filterPeople);
   }
 
   const pubSearch = document.getElementById('pub-search');
@@ -63,47 +72,98 @@ document.addEventListener('DOMContentLoaded', () => {
     const el = document.getElementById('people-preview');
     if (!el) return;
     const top = list.slice(0,4);
-    el.innerHTML = top.map(p=>`
-      <article class="card people-card">
-        <div class="avatar">${initials(p.name)}</div>
-        <div class="person-meta">
-          <h4>${p.name}</h4>
-          <p class="muted">${p.role} — ${p.title || ''}</p>
-        </div>
-      </article>
-    `).join('');
+    el.innerHTML = top.map(p=>renderPersonCard(p)).join('');
   }
 
-  function renderPeopleList(list){
-    const el = document.getElementById('people-list');
-    if (!el) return;
+  function renderPeopleList(list) {
     const search = document.getElementById('people-search');
-    const role = document.getElementById('role-filter');
-
-    function draw(){
-      const q = (search?.value||'').toLowerCase();
-      const r = role?.value || 'all';
-      const filtered = list.filter(p=>{
-        if (r !== 'all' && p.role !== r) return false;
-        if (!q) return true;
-        return (p.name + ' ' + (p.interests||'') + ' ' + (p.title||'')).toLowerCase().includes(q);
-      });
-      el.innerHTML = filtered.map(p=>`
-        <article class="card people-card">
-          <div class="avatar">${initials(p.name)}</div>
-          <div>
-            <h4>${p.name}</h4>
-            <p class="muted-small">${p.role} — ${p.title || ''}</p>
-            <p class="muted">${(p.interests||'').slice(0,120)}</p>
-            <p style="margin-top:8px"><a href="mailto:${p.email}">Email</a> • <a href="${p.website||'#'}">Website</a></p>
-          </div>
-        </article>
-      `).join('');
+    
+    // Call filterPeople initially to show all people
+    filterPeople();
+    
+    // Add event listener to search input
+    if (search) {
+      search.addEventListener('input', filterPeople);
     }
+    
+    function filterPeople() {
+      console.log('Filtering people with search:', search?.value);
+      console.log('Total people in list:', list.length);
+      const q = (search?.value||'').toLowerCase().trim();
+      const filtered = q ? list.filter(p => {
+        const searchText = [
+          p.name,
+          p.interests || '',
+          p.title || '',
+          p.role || '',
+          p.current_position || ''
+        ].join(' ').toLowerCase();
+        return searchText.includes(q);
+      }) : list;
+      console.log('Filtered people:', filtered);
 
-    search?.addEventListener('input', draw);
-    role?.addEventListener('change', draw);
-    draw();
+      // Clear all sections first
+      document.querySelectorAll('.card-grid[data-role]').forEach(section => {
+        section.innerHTML = '';
+      });
+
+      // Split and render current members by role
+      const current = filtered.filter(p => p.status !== 'alumni');
+      console.log('Current members:', current);
+      current.forEach(person => {
+        const section = document.querySelector(`.card-grid[data-role="${person.role}"]`);
+        if (section) {
+          section.innerHTML += renderPersonCard(person);
+        }
+      });
+
+      // Render alumni section
+      const alumniSection = document.querySelector('.card-grid[data-role="Alumni"]');
+      if (alumniSection) {
+        const alumni = filtered.filter(p => p.status === 'alumni');
+        console.log('Alumni:', alumni);
+        alumniSection.innerHTML = alumni.map(p => renderAlumniCard(p)).join('');
+      }
+
+      // Hide empty sections
+      document.querySelectorAll('.role-section').forEach(section => {
+        const cards = section.querySelector('.card-grid');
+        if (!cards) return;
+        const hasCards = cards.children.length > 0;
+        section.style.display = hasCards ? 'block' : 'none';
+        // Also hide the heading if section is empty
+        const heading = section.querySelector('h3');
+        if (heading) heading.style.display = hasCards ? 'block' : 'none';
+      });
+    }
+  }
+
+  function renderPersonCard(p) {
+    return `
+      <article class="card people-card">
+        <div class="avatar">${p.photo ? `<img src="${p.photo}" alt="${p.name}">` : initials(p.name)}</div>
+        <div>
+          <h4>${p.name}</h4>
+          <p class="muted-small">${p.role} — ${p.title || ''}</p>
+          <p class="muted">${(p.interests||'').slice(0,120)}</p>
+          <p style="margin-top:8px"><a href="mailto:${p.email}">Email</a> • <a href="${p.website||'#'}">Website</a></p>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderAlumniCard(p) {
+    return `
+      <article class="card people-card alumni-card">
+        <div class="avatar">${p.photo ? `<img src="${p.photo}" alt="${p.name}">` : initials(p.name)}</div>
+        <div>
+          <h4>${p.name}</h4>
+          <p class="muted-small">${p.title || ''}</p>
+          ${p.current_position ? `<p class="current-position">Now: ${p.current_position}</p>` : ''}
+          <p style="margin-top:8px"><a href="mailto:${p.email}">Email</a> • <a href="${p.website||'#'}">Website</a></p>
+        </div>
+      </article>
+    `;
   }
 
   function renderPubPreview(list){

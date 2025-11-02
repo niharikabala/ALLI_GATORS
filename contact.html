@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Contact — ALLI_GATORS Lab</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/ALLI_GATORS/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-row">
-        <a class="brand" href="/ALLI_GATORS/index.html">ALLI_GATORS Lab</a>
+        <a class="brand" href="/index.html">ALLI_GATORS Lab</a>
         <nav class="main-nav">
-          <a href="/ALLI_GATORS/index.html">Home</a>
-          <a href="/ALLI_GATORS/about.html">About</a>
-          <a href="/ALLI_GATORS/people.html">People</a>
-          <a href="/ALLI_GATORS/publications.html">Publications</a>
-          <a href="/ALLI_GATORS/news.html">News</a>
-          <a href="/ALLI_GATORS/contact.html">Contact</a>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/people.html">People</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/news.html">News</a>
+          <a href="/contact.html">Contact</a>
         </nav>
         <div class="nav-actions">
-          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-light">☀️</span>
+            <span class="theme-toggle-dark">🌙</span>
+          </button>
         </div>
       </div>
     </header>
@@ -28,27 +31,39 @@
     <main class="container">
       <section class="section">
         <h1>Contact us</h1>
-        <p class="lead">We welcome collaboration, student inquiries, and media requests. Use the form below or email us.</p>
+        <p class="lead">We welcome collaboration, student inquiries, and media requests. Feel free to reach out via email or visit us on campus.</p>
 
-        <div class="grid-2">
-          <form id="contact-form" class="card">
-            <label>Name<input name="name" required></label>
-            <label>Email<input name="email" type="email" required></label>
-            <label>Message<textarea name="message" rows="6" required></textarea></label>
-            <div class="form-actions">
-              <button type="submit" class="btn primary">Send</button>
-              <button type="button" id="contact-reset" class="btn ghost">Clear</button>
+        <div class="contact-grid">
+          <div class="contact-info card">
+            <div class="contact-section">
+              <h3>Email</h3>
+              <p><a href="mailto:lab@example.edu" class="contact-link">lab@example.edu</a></p>
+              <p class="muted">For general inquiries, collaboration requests, and student opportunities</p>
             </div>
-            <p class="muted"><small>This is a static site — the form will open your mail client to send a message.</small></p>
-          </form>
 
-          <div class="card">
-            <h3>General contact</h3>
-            <p>Email: <a href="mailto:lab@example.edu">lab@example.edu</a></p>
-            <h4>Address</h4>
-            <address>123 Research Way<br/>City, State, 12345<br/>Country</address>
-            <h4>Social</h4>
-            <p><a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+            <div class="contact-section">
+              <h3>Visit us</h3>
+              <address>
+                ALLI_GATORS Lab<br>
+                Computer Science Department<br>
+                123 Research Way<br>
+                City, State, 12345<br>
+                Country
+              </address>
+            </div>
+
+            <div class="contact-section">
+              <h3>Social</h3>
+              <p><a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+            </div>
+          </div>
+
+          <div class="map-card card">
+            <img src="/assets/Images/map/location.png" alt="Map showing lab location" class="location-map">
+            <div class="map-overlay">
+              <p>We're located in the Computer Science building, Room 4242.</p>
+              <a href="https://maps.google.com/?q=123+Research+Way" class="btn primary" target="_blank">Get directions</a>
+            </div>
           </div>
         </div>
       </section>
@@ -69,6 +84,6 @@
       </div>
     </footer>
 
-    <script src="/ALLI_GATORS/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

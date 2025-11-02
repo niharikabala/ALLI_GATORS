@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Publications — ALLI_GATORS Lab</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/ALLI_GATORS/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-row">
-        <a class="brand" href="/ALLI_GATORS/index.html">ALLI_GATORS Lab</a>
+        <a class="brand" href="/index.html">ALLI_GATORS Lab</a>
         <nav class="main-nav">
-          <a href="/ALLI_GATORS/index.html">Home</a>
-          <a href="/ALLI_GATORS/about.html">About</a>
-          <a href="/ALLI_GATORS/people.html">People</a>
-          <a href="/ALLI_GATORS/publications.html">Publications</a>
-          <a href="/ALLI_GATORS/news.html">News</a>
-          <a href="/ALLI_GATORS/contact.html">Contact</a>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/people.html">People</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/news.html">News</a>
+          <a href="/contact.html">Contact</a>
         </nav>
         <div class="nav-actions">
-          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-light">☀️</span>
+            <span class="theme-toggle-dark">🌙</span>
+          </button>
         </div>
       </div>
     </header>
@@ -31,8 +34,8 @@
         <p class="lead">Selected recent publications from the lab. Click a title to see more details.</p>
 
         <div class="filters">
-          <input id="pub-search" placeholder="Search titles, authors, or tags" />
-          <select id="year-filter">
+          <input type="search" id="pub-search" placeholder="Search titles, authors, or tags" spellcheck="false" />
+          <select id="year-filter" aria-label="Filter by year">
             <option value="all">All years</option>
           </select>
         </div>
@@ -58,6 +61,6 @@
       </div>
     </footer>
 
-    <script src="/ALLI_GATORS/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

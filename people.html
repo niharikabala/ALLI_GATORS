@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>People — ALLI_GATORS Lab</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/ALLI_GATORS/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-row">
-        <a class="brand" href="/ALLI_GATORS/index.html">ALLI_GATORS Lab</a>
+        <a class="brand" href="/index.html">ALLI_GATORS Lab</a>
         <nav class="main-nav">
-          <a href="/ALLI_GATORS/index.html">Home</a>
-          <a href="/ALLI_GATORS/about.html">About</a>
-          <a href="/ALLI_GATORS/people.html">People</a>
-          <a href="/ALLI_GATORS/publications.html">Publications</a>
-          <a href="/ALLI_GATORS/news.html">News</a>
-          <a href="/ALLI_GATORS/contact.html">Contact</a>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/people.html">People</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/news.html">News</a>
+          <a href="/contact.html">Contact</a>
         </nav>
         <div class="nav-actions">
-          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-light">☀️</span>
+            <span class="theme-toggle-dark">🌙</span>
+          </button>
         </div>
       </div>
     </header>
@@ -31,20 +34,46 @@
         <p class="lead">Meet the team: faculty, postdocs, students, and staff who run the lab.</p>
 
         <div class="filters">
-          <input id="people-search" placeholder="Search people by name or interest" />
-          <select id="role-filter">
-            <option value="all">All roles</option>
-            <option>PI</option>
-            <option>Postdoc</option>
-            <option>PhD</option>
-            <option>Staff</option>
-            <option>Alumni</option>
-          </select>
+          <input type="search" id="people-search" placeholder="Search people by name, role, or interest" spellcheck="false" />
         </div>
 
-        <div id="people-list" class="card-grid">
-          <!-- rendered by JS -->
-        </div>
+        <section class="people-section current-members">
+          <h2>Current Members</h2>
+          <div class="role-section">
+            <h3>Faculty</h3>
+            <div class="card-grid" data-role="PI">
+              <!-- rendered by JS -->
+            </div>
+          </div>
+          
+          <div class="role-section">
+            <h3>Postdoctoral Researchers</h3>
+            <div class="card-grid" data-role="Postdoc">
+              <!-- rendered by JS -->
+            </div>
+          </div>
+
+          <div class="role-section">
+            <h3>PhD Students</h3>
+            <div class="card-grid" data-role="PhD">
+              <!-- rendered by JS -->
+            </div>
+          </div>
+
+          <div class="role-section">
+            <h3>Staff</h3>
+            <div class="card-grid" data-role="Staff">
+              <!-- rendered by JS -->
+            </div>
+          </div>
+        </section>
+
+        <section class="people-section alumni">
+          <h2>Alumni</h2>
+          <div class="card-grid" data-role="Alumni">
+            <!-- rendered by JS -->
+          </div>
+        </section>
       </section>
     </main>
 
@@ -63,6 +92,6 @@
       </div>
     </footer>
 
-    <script src="/ALLI_GATORS/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

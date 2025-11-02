@@ -7,7 +7,8 @@
     "email": "riley.alligator@example.edu",
     "website": "#",
     "interests": "Human-AI collaboration, model calibration, fairness",
-    "photo": null
+    "photo": "/assets/Images/Alli.jpg",
+    "status": "current"
   },
   {
     "id": "postdoc1",
@@ -17,7 +18,8 @@
     "email": "aria.taylor@example.edu",
     "website": "#",
     "interests": "Robustness, interpretability, user studies",
-    "photo": null
+    "photo": "/assets/Images/people/person1.jpg",
+    "status": "current"
   },
   {
     "id": "phd1",
@@ -27,7 +29,8 @@
     "email": "alex.student@example.edu",
     "website": "#",
     "interests": "Interactive ML, human-centered AI",
-    "photo": null
+    "photo": "/assets/Images/people/person2.jpg",
+    "status": "current"
   },
   {
     "id": "phd2",
@@ -37,7 +40,8 @@
     "email": "jordan.lee@example.edu",
     "website": "#",
     "interests": "Privacy-preserving ML, federated learning",
-    "photo": null
+    "photo": "/assets/Images/people/person3.jpg",
+    "status": "current"
   },
   {
     "id": "staff1",
@@ -47,16 +51,31 @@
     "email": "morgan.reyes@example.edu",
     "website": "#",
     "interests": "Research ops, reproduction, outreach",
-    "photo": null
+    "photo": "/assets/Images/people/person4.jpg",
+    "status": "current"
   },
   {
-    "id": "alum1",
+    "id": "alumni1",
     "name": "Taylor Kim",
     "role": "Alumni",
-    "title": "Former PhD — now @ IndustryX",
+    "title": "Former PhD Student",
     "email": "taylor.kim@example.com",
     "website": "#",
     "interests": "Deploying ML in production",
-    "photo": null
+    "photo": "/assets/Images/people/person5.jpg",
+    "status": "alumni",
+    "current_position": "Senior ML Engineer at IndustryX"
+  },
+  {
+    "id": "alumni2",
+    "name": "Dr. Jamie Smith",
+    "role": "Alumni",
+    "title": "Former Postdoc",
+    "email": "jamie.smith@academy.edu",
+    "website": "#",
+    "interests": "Federated learning, privacy",
+    "photo": null,
+    "status": "alumni",
+    "current_position": "Assistant Professor at Academy University"
   }
 ]

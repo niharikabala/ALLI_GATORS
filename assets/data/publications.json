@@ -1,62 +1,62 @@
 [
   {
-    "id":"p1",
-    "title":"Interactive Calibration for Human-AI Teams",
-    "authors":["Alex Student","Aria Taylor","Riley Alligator"],
-    "venue":"NeurIPS 2025",
-    "year":2025,
-    "doi":"#",
-    "abstract":"We introduce a method for interactive calibration where users iteratively adjust model outputs to match human expectations, improving downstream decision-making.",
-    "tags":["human-ai","calibration"]
+    "id": "p1",
+    "title": "Adaptive Learning in Human-AI Systems: A Multi-Agent Approach",
+    "authors": ["Riley Alligator", "Aria Taylor", "Alex Student"],
+    "venue": "NeurIPS 2025",
+    "year": 2025,
+    "abstract": "This paper introduces a novel framework for adaptive learning in human-AI collaborative systems. We demonstrate improved robustness and fairness across diverse deployment scenarios.",
+    "pdf": "#",
+    "code": "https://github.com/ALLI_GATORS/adaptive-learning",
+    "video": "https://youtube.com/watch?v=example"
   },
   {
-    "id":"p2",
-    "title":"Robustness via User-in-the-Loop Evaluation",
-    "authors":["Jordan Lee","Riley Alligator"],
-    "venue":"ICLR 2024",
-    "year":2024,
-    "doi":"#",
-    "abstract":"We propose evaluation protocols that incorporate human feedback to better assess model robustness under real-world shifts.",
-    "tags":["robustness","evaluation"]
+    "id": "p2",
+    "title": "Privacy-Preserving Federated Learning for Healthcare Applications",
+    "authors": ["Jordan Lee", "Pat Johnson", "Riley Alligator"],
+    "venue": "ICML 2025",
+    "year": 2025,
+    "abstract": "We present a new approach to federated learning that maintains privacy while achieving state-of-the-art performance on healthcare tasks.",
+    "pdf": "#",
+    "code": "https://github.com/ALLI_GATORS/private-fed"
   },
   {
-    "id":"p3",
-    "title":"Fairness Constraints for Interactive Systems",
-    "authors":["Taylor Kim","Aria Taylor"],
-    "venue":"FAccT 2023",
-    "year":2023,
-    "doi":"#",
-    "abstract":"A framework for adding fairness constraints into interactive decision support systems with practical case studies.",
-    "tags":["fairness","hci"]
+    "id": "p3",
+    "title": "Interactive Model Calibration with Human Feedback",
+    "authors": ["Alex Student", "Riley Alligator"],
+    "venue": "CHI 2025",
+    "year": 2025,
+    "abstract": "A novel interface for interactive model calibration that allows domain experts to provide feedback and improve model performance.",
+    "pdf": "#",
+    "video": "https://youtube.com/watch?v=example2"
   },
   {
-    "id":"p4",
-    "title":"Privacy-Preserving Personalization at Scale",
-    "authors":["Jordan Lee","Morgan Reyes"],
-    "venue":"KDD 2022",
-    "year":2022,
-    "doi":"#",
-    "abstract":"Techniques to personalize models using federated and encrypted learning techniques without exposing sensitive data.",
-    "tags":["privacy","federated"]
+    "id": "p4",
+    "title": "Fair and Robust Deep Learning: A Comprehensive Study",
+    "authors": ["Aria Taylor", "Riley Alligator", "Sam Chen"],
+    "venue": "FAccT 2024",
+    "year": 2024,
+    "abstract": "An extensive analysis of fairness and robustness in deep learning systems, with practical recommendations for deployment.",
+    "pdf": "#",
+    "code": "https://github.com/ALLI_GATORS/fair-robust-dl"
   },
   {
-    "id":"p5",
-    "title":"Designing User Studies for ML Interpretability",
-    "authors":["Alex Student","Riley Alligator"],
-    "venue":"CHI 2021",
-    "year":2021,
-    "doi":"#",
-    "abstract":"Guidelines and templates for reproducible user studies evaluating ML interpretability in practice.",
-    "tags":["interpretability","hci"]
+    "id": "p5",
+    "title": "Understanding User Trust in AI Systems",
+    "authors": ["Taylor Kim", "Riley Alligator"],
+    "venue": "CHI 2024",
+    "year": 2024,
+    "abstract": "A large-scale user study examining factors that influence trust in AI systems across different application domains.",
+    "pdf": "#"
   },
   {
-    "id":"p6",
-    "title":"Open Data and Reproducible Pipelines",
-    "authors":["Morgan Reyes"],
-    "venue":"Platform Research 2020",
-    "year":2020,
-    "doi":"#",
-    "abstract":"Best practices for reproducible research pipelines and open data release in ML labs.",
-    "tags":["reproducibility","open-data"]
+    "id": "p6",
+    "title": "Efficient Training of Large Language Models with Adaptive Methods",
+    "authors": ["Pat Johnson", "Sam Chen", "Riley Alligator"],
+    "venue": "ICLR 2024",
+    "year": 2024,
+    "abstract": "Novel optimization techniques for training large language models that reduce computational requirements while maintaining performance.",
+    "pdf": "#",
+    "code": "https://github.com/ALLI_GATORS/efficient-llm"
   }
 ]
