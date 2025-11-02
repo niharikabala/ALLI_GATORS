@@ -1,0 +1,91 @@
+:root{
+  --bg:#0f1724; /* dark by default; theme toggles */
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#7c5cff;
+  --accent-2:#00c2a8;
+  --text:#e6eef6;
+  --glass: rgba(255,255,255,0.03);
+  --radius:12px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+:root.light{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --muted:#556070;
+  --accent:#6b46ff;
+  --accent-2:#00a688;
+  --text:#0b1220;
+  --glass: rgba(2,6,23,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#061226 0%, rgba(7,13,25,0.9) 100%);
+  color:var(--text);
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.light body{background:#f5f7fb}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+.site-header{backdrop-filter:blur(6px);position:sticky;top:0;background:linear-gradient(180deg, rgba(0,0,0,0.35), transparent);z-index:60}
+.nav-row{display:flex;align-items:center;gap:20px}
+.brand{font-weight:800;color:var(--text);text-decoration:none;font-size:1.05rem}
+.main-nav{margin-left:12px;display:flex;gap:14px}
+.main-nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+.main-nav a:hover{color:var(--text);background:var(--glass)}
+.nav-actions{margin-left:auto}
+#theme-toggle{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+
+.hero{padding:56px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start}
+.lead{color:var(--muted);font-size:1.05rem}
+.hero-text h1{margin:0 0 10px 0;font-size:2.1rem}
+.cta-row{margin-top:18px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+
+.hero-panel .stats{display:flex;gap:12px;justify-content:space-between;margin-bottom:18px}
+.stats div{background:var(--card);padding:12px;border-radius:10px;text-align:center}
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.5)}
+.card-header{font-size:0.85rem;color:var(--muted);margin-bottom:8px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+
+.highlights{margin-top:22px}
+.view-more{text-align:right;margin-top:8px}
+.list .pub-item{padding:12px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.pub-list .pub-item{margin-bottom:12px}
+
+.section{padding:28px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.filters{display:flex;gap:12px;align-items:center;margin-bottom:16px}
+.filters input,.filters select{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+
+.people-card{display:flex;gap:12px;align-items:center}
+.avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+.person-meta h4{margin:0 0 6px 0}
+.person-meta p{margin:0;color:var(--muted);font-size:0.95rem}
+
+.pub-list .meta{color:var(--muted);font-size:0.95rem;margin-bottom:6px}
+.muted{color:var(--muted)}
+
+.site-footer{margin-top:40px;padding:20px 0;background:linear-gradient(180deg, transparent, rgba(0,0,0,0.1))}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.footer-grid h4{margin-bottom:8px}
+.links{list-style:none;padding:0;margin:0}
+.links li{margin-bottom:6px}
+.copyright{margin-top:12px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--muted)}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+}
+
+/* small utilities */
+.muted-small{color:var(--muted);font-size:0.9rem}
+.form-actions{display:flex;gap:8px;margin-top:8px}

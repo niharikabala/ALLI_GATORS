@@ -1,0 +1,62 @@
+[
+  {
+    "id":"p1",
+    "title":"Interactive Calibration for Human-AI Teams",
+    "authors":["Alex Student","Aria Taylor","Riley Alligator"],
+    "venue":"NeurIPS 2025",
+    "year":2025,
+    "doi":"#",
+    "abstract":"We introduce a method for interactive calibration where users iteratively adjust model outputs to match human expectations, improving downstream decision-making.",
+    "tags":["human-ai","calibration"]
+  },
+  {
+    "id":"p2",
+    "title":"Robustness via User-in-the-Loop Evaluation",
+    "authors":["Jordan Lee","Riley Alligator"],
+    "venue":"ICLR 2024",
+    "year":2024,
+    "doi":"#",
+    "abstract":"We propose evaluation protocols that incorporate human feedback to better assess model robustness under real-world shifts.",
+    "tags":["robustness","evaluation"]
+  },
+  {
+    "id":"p3",
+    "title":"Fairness Constraints for Interactive Systems",
+    "authors":["Taylor Kim","Aria Taylor"],
+    "venue":"FAccT 2023",
+    "year":2023,
+    "doi":"#",
+    "abstract":"A framework for adding fairness constraints into interactive decision support systems with practical case studies.",
+    "tags":["fairness","hci"]
+  },
+  {
+    "id":"p4",
+    "title":"Privacy-Preserving Personalization at Scale",
+    "authors":["Jordan Lee","Morgan Reyes"],
+    "venue":"KDD 2022",
+    "year":2022,
+    "doi":"#",
+    "abstract":"Techniques to personalize models using federated and encrypted learning techniques without exposing sensitive data.",
+    "tags":["privacy","federated"]
+  },
+  {
+    "id":"p5",
+    "title":"Designing User Studies for ML Interpretability",
+    "authors":["Alex Student","Riley Alligator"],
+    "venue":"CHI 2021",
+    "year":2021,
+    "doi":"#",
+    "abstract":"Guidelines and templates for reproducible user studies evaluating ML interpretability in practice.",
+    "tags":["interpretability","hci"]
+  },
+  {
+    "id":"p6",
+    "title":"Open Data and Reproducible Pipelines",
+    "authors":["Morgan Reyes"],
+    "venue":"Platform Research 2020",
+    "year":2020,
+    "doi":"#",
+    "abstract":"Best practices for reproducible research pipelines and open data release in ML labs.",
+    "tags":["reproducibility","open-data"]
+  }
+]

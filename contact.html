@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — ALLI_GATORS Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="/">ALLI_GATORS Lab</a>
+        <nav class="main-nav">
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/people.html">People</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/news.html">News</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h1>Contact us</h1>
+        <p class="lead">We welcome collaboration, student inquiries, and media requests. Use the form below or email us.</p>
+
+        <div class="grid-2">
+          <form id="contact-form" class="card">
+            <label>Name<input name="name" required></label>
+            <label>Email<input name="email" type="email" required></label>
+            <label>Message<textarea name="message" rows="6" required></textarea></label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send</button>
+              <button type="button" id="contact-reset" class="btn ghost">Clear</button>
+            </div>
+            <p class="muted"><small>This is a static site — the form will open your mail client to send a message.</small></p>
+          </form>
+
+          <div class="card">
+            <h3>General contact</h3>
+            <p>Email: <a href="mailto:lab@example.edu">lab@example.edu</a></p>
+            <h4>Address</h4>
+            <address>123 Research Way<br/>City, State, 12345<br/>Country</address>
+            <h4>Social</h4>
+            <p><a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>ALLI_GATORS Lab</h3>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:lab@example.edu">lab@example.edu</a></p>
+        </div>
+      </div>
+      <div class="container copyright">
+        <small>© ALLI_GATORS Lab — <span id="year"></span></small>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

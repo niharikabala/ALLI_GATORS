@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pi1",
+    "name": "Prof. Riley Alligator",
+    "role": "PI",
+    "title": "Professor of Computer Science",
+    "email": "riley.alligator@example.edu",
+    "website": "#",
+    "interests": "Human-AI collaboration, model calibration, fairness",
+    "photo": null
+  },
+  {
+    "id": "postdoc1",
+    "name": "Dr. Aria Taylor",
+    "role": "Postdoc",
+    "title": "Postdoctoral Researcher",
+    "email": "aria.taylor@example.edu",
+    "website": "#",
+    "interests": "Robustness, interpretability, user studies",
+    "photo": null
+  },
+  {
+    "id": "phd1",
+    "name": "Alex Student",
+    "role": "PhD",
+    "title": "PhD Candidate",
+    "email": "alex.student@example.edu",
+    "website": "#",
+    "interests": "Interactive ML, human-centered AI",
+    "photo": null
+  },
+  {
+    "id": "phd2",
+    "name": "Jordan Lee",
+    "role": "PhD",
+    "title": "PhD Candidate",
+    "email": "jordan.lee@example.edu",
+    "website": "#",
+    "interests": "Privacy-preserving ML, federated learning",
+    "photo": null
+  },
+  {
+    "id": "staff1",
+    "name": "Morgan Reyes",
+    "role": "Staff",
+    "title": "Lab Manager",
+    "email": "morgan.reyes@example.edu",
+    "website": "#",
+    "interests": "Research ops, reproduction, outreach",
+    "photo": null
+  },
+  {
+    "id": "alum1",
+    "name": "Taylor Kim",
+    "role": "Alumni",
+    "title": "Former PhD — now @ IndustryX",
+    "email": "taylor.kim@example.com",
+    "website": "#",
+    "interests": "Deploying ML in production",
+    "photo": null
+  }
+]

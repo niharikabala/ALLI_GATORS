@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>People — ALLI_GATORS Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="/">ALLI_GATORS Lab</a>
+        <nav class="main-nav">
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/people.html">People</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/news.html">News</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h1>People</h1>
+        <p class="lead">Meet the team: faculty, postdocs, students, and staff who run the lab.</p>
+
+        <div class="filters">
+          <input id="people-search" placeholder="Search people by name or interest" />
+          <select id="role-filter">
+            <option value="all">All roles</option>
+            <option>PI</option>
+            <option>Postdoc</option>
+            <option>PhD</option>
+            <option>Staff</option>
+            <option>Alumni</option>
+          </select>
+        </div>
+
+        <div id="people-list" class="card-grid">
+          <!-- rendered by JS -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>ALLI_GATORS Lab</h3>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:lab@example.edu">lab@example.edu</a></p>
+        </div>
+      </div>
+      <div class="container copyright">
+        <small>© ALLI_GATORS Lab — <span id="year"></span></small>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
