@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const path = location.pathname.split('/').pop() || 'index.html';
 
   // fetch and render people for preview and full page
-  fetch('assets/data/people.json').then(r=>r.json()).then(data=>{
+  fetch('/ALLI_GATORS/assets/data/people.json').then(r=>r.json()).then(data=>{
     renderPeoplePreview(data);
     if (path === 'people.html') renderPeopleList(data);
   }).catch(e=>console.warn('people.json fetch failed', e));
 
   // fetch publications
-  fetch('assets/data/publications.json').then(r=>r.json()).then(data=>{
+  fetch('/ALLI_GATORS/assets/data/publications.json').then(r=>r.json()).then(data=>{
     renderPubPreview(data);
     if (path === 'publications.html') renderPubList(data);
   }).catch(e=>console.warn('publications.json fetch failed', e));
