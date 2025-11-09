@@ -222,6 +222,58 @@ a:hover {
   background-size: 1rem;
 }
 
+/* Filter badges */
+.filter-badges {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem 0;
+  flex-wrap: wrap;
+}
+
+.filter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 2px solid var(--glass);
+  background: var(--card);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.filter-badge:hover {
+  border-color: var(--accent);
+  background: var(--glass);
+}
+
+.filter-badge.active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.badge-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.4rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.filter-badge.active .badge-count {
+  background: rgba(255, 255, 255, 0.25);
+}
+
 /* Cards */
 .card {
   background: var(--card);
@@ -572,4 +624,98 @@ a:hover {
   }
 }
 
-/* Rest of your existing CSS below */
+/* Publications styles */
+.pub-item {
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pub-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--glass);
+}
+
+.pub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pub-item .meta {
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.pub-badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pub-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pub-badge.free {
+  background: rgba(0, 194, 168, 0.15);
+  color: var(--accent-2);
+}
+
+.pub-badge.review {
+  background: rgba(124, 92, 255, 0.15);
+  color: var(--accent);
+}
+
+.pub-badge.preprint {
+  background: rgba(255, 184, 0, 0.15);
+  color: #ff9800;
+}
+
+.pub-item h3, .pub-item h4 {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.authors-list {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass);
+}
+
+.pub-link {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: var(--glass);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.pub-link:hover {
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+}
+
+.pub-list {
+  margin-top: 2rem;
+}

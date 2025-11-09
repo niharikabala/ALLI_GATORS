@@ -185,13 +185,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const el = document.getElementById('pub-preview');
     if (!el) return;
     const top = list.slice(0,4);
-    el.innerHTML = top.map(p=>`
-      <div class="card pub-item">
-        <div class="meta">${p.year} • ${p.venue}</div>
-        <h4>${p.title}</h4>
-        <p class="muted">${p.authors.join(', ')}</p>
-      </div>
-    `).join('');
+    el.innerHTML = top.map(p=>{
+      const badges = [];
+      if (p.free_access) badges.push('<span class="pub-badge free">Free Access</span>');
+      if (p.type === 'Review') badges.push('<span class="pub-badge review">Review</span>');
+      if (p.type === 'Preprint') badges.push('<span class="pub-badge preprint">Preprint</span>');
+      
+      return `
+        <div class="card pub-item">
+          <div class="meta">${p.year} • ${p.venue}</div>
+          <h4>${p.title}</h4>
+          <p class="muted">${p.authors.slice(0, 3).join(', ')}${p.authors.length > 3 ? ', et al.' : ''}</p>
+          ${badges.length > 0 ? `<div class="pub-badges">${badges.join('')}</div>` : ''}
+        </div>
+      `;
+    }).join('');
   }
 
   function renderPubList(list){
@@ -199,6 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!el) return;
     const search = document.getElementById('pub-search');
     const yearSelect = document.getElementById('year-filter');
+    const filterBadges = document.querySelectorAll('.filter-badge');
+    let activeFilter = 'all';
 
     // populate year filter
     const years = Array.from(new Set(list.map(p=>p.year))).sort((a,b)=>b-a);
@@ -206,24 +216,82 @@ document.addEventListener('DOMContentLoaded', () => {
       yearSelect.innerHTML = '<option value="all">All years</option>'+years.map(y=>`<option value="${y}">${y}</option>`).join('');
     }
 
+    // Update badge counts
+    function updateCounts(filtered) {
+      const countAll = document.getElementById('count-all');
+      const countFree = document.getElementById('count-free');
+      const countReview = document.getElementById('count-review');
+      const countPreprint = document.getElementById('count-preprint');
+      
+      if (countAll) countAll.textContent = filtered.length;
+      if (countFree) countFree.textContent = filtered.filter(p => p.free_access).length;
+      if (countReview) countReview.textContent = filtered.filter(p => p.type === 'Review').length;
+      if (countPreprint) countPreprint.textContent = filtered.filter(p => p.type === 'Preprint').length;
+    }
+
     function draw(){
       const q = (search?.value||'').toLowerCase();
       const y = yearSelect?.value || 'all';
-      const filtered = list.filter(p=>{
+      
+      // First filter by search and year
+      let filtered = list.filter(p=>{
         if (y !== 'all' && String(p.year) !== String(y)) return false;
         if (!q) return true;
-        return (p.title + ' ' + p.authors.join(' ') + ' ' + (p.tags||'')).toLowerCase().includes(q);
+        return (p.title + ' ' + p.authors.join(' ') + ' ' + p.venue + ' ' + (p.type||'')).toLowerCase().includes(q);
       });
-      el.innerHTML = filtered.map(p=>`
-        <article class="card pub-item">
-          <div class="meta">${p.year} • ${p.venue}</div>
-          <h3>${p.title}</h3>
-          <p class="muted">${p.authors.join(', ')}</p>
-          <p>${p.abstract ? p.abstract.slice(0,240) + (p.abstract.length>240? '…' : '') : ''}</p>
-          <p><a href="${p.doi|| '#'}" target="_blank">Link</a> • <span class="muted">tags: ${p.tags?.join(', ') || '—'}</span></p>
-        </article>
-      `).join('');
+      
+      // Update counts based on search/year filtered results
+      updateCounts(filtered);
+      
+      // Then apply badge filter
+      if (activeFilter === 'free') {
+        filtered = filtered.filter(p => p.free_access);
+      } else if (activeFilter === 'review') {
+        filtered = filtered.filter(p => p.type === 'Review');
+      } else if (activeFilter === 'preprint') {
+        filtered = filtered.filter(p => p.type === 'Preprint');
+      }
+      
+      el.innerHTML = filtered.map(p=>{
+        const badges = [];
+        if (p.free_access) badges.push('<span class="pub-badge free">Free Access</span>');
+        if (p.type === 'Review') badges.push('<span class="pub-badge review">Review</span>');
+        if (p.type === 'Preprint') badges.push('<span class="pub-badge preprint">Preprint</span>');
+        
+        const doiUrl = p.doi ? `https://doi.org/${p.doi}` : '#';
+        const pubmedUrl = p.pubmed_url || `https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/`;
+        
+        return `
+          <article class="card pub-item">
+            <div class="pub-header">
+              <div class="meta">${p.year} • ${p.venue}</div>
+              ${badges.length > 0 ? `<div class="pub-badges">${badges.join('')}</div>` : ''}
+            </div>
+            <h3>${p.title}</h3>
+            <p class="muted authors-list">${p.authors.join(', ')}</p>
+            <div class="pub-links">
+              ${p.pmid ? `<a href="${pubmedUrl}" target="_blank" class="pub-link">PubMed</a>` : ''}
+              ${p.doi ? `<a href="${doiUrl}" target="_blank" class="pub-link">DOI</a>` : ''}
+              <span class="muted">PMID: ${p.pmid || 'N/A'}</span>
+            </div>
+          </article>
+        `;
+      }).join('');
     }
+
+    // Filter badge click handlers
+    filterBadges.forEach(badge => {
+      badge.addEventListener('click', () => {
+        const filter = badge.dataset.filter;
+        activeFilter = filter;
+        
+        // Update active states
+        filterBadges.forEach(b => b.classList.remove('active'));
+        badge.classList.add('active');
+        
+        draw();
+      });
+    });
 
     search?.addEventListener('input', draw);
     yearSelect?.addEventListener('change', draw);

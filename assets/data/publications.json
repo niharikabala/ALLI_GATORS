@@ -1,62 +1,1522 @@
 [
   {
-    "id": "p1",
-    "title": "Adaptive Learning in Human-AI Systems: A Multi-Agent Approach",
-    "authors": ["Riley Alligator", "Aria Taylor", "Alex Student"],
-    "venue": "NeurIPS 2025",
+    "id": "pmid41153622",
+    "title": "The Heart in Space: Effects of Microgravity on Different Cell Types and Their Functions in the Cardiovascular System.",
+    "authors": [
+      "Shahzad Z",
+      "Rafay RH",
+      "Bala N",
+      "Dogan YE",
+      "Alli AA"
+    ],
+    "venue": "Biomedicines",
     "year": 2025,
-    "abstract": "This paper introduces a novel framework for adaptive learning in human-AI collaborative systems. We demonstrate improved robustness and fairness across diverse deployment scenarios.",
-    "pdf": "#",
-    "code": "https://github.com/ALLI_GATORS/adaptive-learning",
-    "video": "https://youtube.com/watch?v=example"
+    "pmid": "41153622",
+    "doi": "10.3390/biomedicines13102336",
+    "type": "Review",
+    "free_access": true
   },
   {
-    "id": "p2",
-    "title": "Privacy-Preserving Federated Learning for Healthcare Applications",
-    "authors": ["Jordan Lee", "Pat Johnson", "Riley Alligator"],
-    "venue": "ICML 2025",
+    "id": "pmid41083132",
+    "title": "Calcium oxalate alters lipid profiles and annexin A2 enrichment in membrane fractions of murine inner medullary collecting duct cells.",
+    "authors": [
+      "Shahzad Z",
+      "Rafay R",
+      "Khan S",
+      "Kazory A",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "Biochim Biophys Acta Gen Subj",
     "year": 2025,
-    "abstract": "We present a new approach to federated learning that maintains privacy while achieving state-of-the-art performance on healthcare tasks.",
-    "pdf": "#",
-    "code": "https://github.com/ALLI_GATORS/private-fed"
+    "pmid": "41083132",
+    "doi": "10.1016/j"
   },
   {
-    "id": "p3",
-    "title": "Interactive Model Calibration with Human Feedback",
-    "authors": ["Alex Student", "Riley Alligator"],
-    "venue": "CHI 2025",
+    "id": "pmid40863142",
+    "title": "Novel Lipid Biomarkers of Chronic Kidney Disease of Unknown Etiology Based on Urinary Small Extracellular Vesicles: A Pilot Study of Sugar Cane Workers.",
+    "authors": [
+      "Zhou J",
+      "Kroll KJ",
+      "Butler-Dawson J",
+      "Krisher L",
+      "Alli AA",
+      "Vulpe C",
+      "Denslow ND"
+    ],
+    "venue": "Metabolites",
     "year": 2025,
-    "abstract": "A novel interface for interactive model calibration that allows domain experts to provide feedback and improve model performance.",
-    "pdf": "#",
-    "video": "https://youtube.com/watch?v=example2"
+    "pmid": "40863142",
+    "doi": "10.3390/metabo15080523",
+    "free_access": true
   },
   {
-    "id": "p4",
-    "title": "Fair and Robust Deep Learning: A Comprehensive Study",
-    "authors": ["Aria Taylor", "Riley Alligator", "Sam Chen"],
-    "venue": "FAccT 2024",
-    "year": 2024,
-    "abstract": "An extensive analysis of fairness and robustness in deep learning systems, with practical recommendations for deployment.",
-    "pdf": "#",
-    "code": "https://github.com/ALLI_GATORS/fair-robust-dl"
+    "id": "pmid40788511",
+    "title": "Apoptosis, ferroptosis, necrosis, necroptosis and pyroptosis in the formation of calcium oxalate kidney stones.",
+    "authors": [
+      "Khan SR",
+      "Alli AA"
+    ],
+    "venue": "Urolithiasis",
+    "year": 2025,
+    "pmid": "40788511",
+    "doi": "10.1007/s00240-025-01826-w",
+    "type": "Review"
   },
   {
-    "id": "p5",
-    "title": "Understanding User Trust in AI Systems",
-    "authors": ["Taylor Kim", "Riley Alligator"],
-    "venue": "CHI 2024",
-    "year": 2024,
-    "abstract": "A large-scale user study examining factors that influence trust in AI systems across different application domains.",
-    "pdf": "#"
+    "id": "pmid40723823",
+    "title": "Administration of Purified Alpha-1 Antitrypsin in Salt-Loaded Hypertensive 129Sv Mice Attenuates the Expression of Inflammatory Associated Proteins in the Kidney.",
+    "authors": [
+      "Nguyen VL",
+      "Dogan YE",
+      "Bala N",
+      "Galban ES",
+      "Song S",
+      "Alli AA"
+    ],
+    "venue": "Biomolecules",
+    "year": 2025,
+    "pmid": "40723823",
+    "doi": "10.3390/biom15070951",
+    "free_access": true
   },
   {
-    "id": "p6",
-    "title": "Efficient Training of Large Language Models with Adaptive Methods",
-    "authors": ["Pat Johnson", "Sam Chen", "Riley Alligator"],
-    "venue": "ICLR 2024",
+    "id": "pmid40626890",
+    "title": "Fatty Acids and Inflammatory Protein Biomarkers From Coronavirus Disease 2019 Patients.",
+    "authors": [
+      "Bala N",
+      "Habib AH",
+      "Kozuch M",
+      "Denslow ND",
+      "Dhaliwal NS",
+      "Owings AH",
+      "Glover SC",
+      "Alli AA"
+    ],
+    "venue": "Immun Inflamm Dis",
+    "year": 2025,
+    "pmid": "40626890",
+    "doi": "10.1002/iid3",
+    "free_access": true
+  },
+  {
+    "id": "pmid40501964",
+    "title": "A benchtop bioreactor to impart coarctation-induced deformation and assess mechanisms of endothelial dysfunction.",
+    "authors": [
+      "Schock D",
+      "Armstrong A",
+      "Alli A",
+      "LaDisa JF"
+    ],
+    "venue": "bioRxiv [Preprint]",
+    "year": 2025,
+    "pmid": "40501964",
+    "doi": "10.1101/2025",
+    "type": "Preprint",
+    "free_access": true
+  },
+  {
+    "id": "pmid40493452",
+    "title": "Physiological role and mechanisms of action for a long noncoding haplotype region.",
+    "authors": [
+      "Xue H",
+      "Mishra MK",
+      "Liu Y",
+      "Liu P",
+      "Grzybowski M",
+      "Pandey R",
+      "Usa K",
+      "Vanden Avond MA",
+      "Bala N",
+      "Alli AA",
+      "Cowley AW Jr",
+      "Qiu Q",
+      "Greene AS",
+      "Rao S",
+      "O'Meara CC",
+      "Geurts AM",
+      "Liang M"
+    ],
+    "venue": "Cell Rep",
+    "year": 2025,
+    "pmid": "40493452",
+    "doi": "10.1016/j",
+    "free_access": true
+  },
+  {
+    "id": "pmid40136509",
+    "title": "Small Extracellular Vesicles with a High Sphingomyelin Content Isolated from Hypertensive Diabetic db/db Mice Inhibits Calcium Mobilization and Augments Amiloride-Sensitive Epithelial Sodium Channel Activity.",
+    "authors": [
+      "Ramsay H",
+      "Yu L",
+      "Alousi FF",
+      "Alli AA"
+    ],
+    "venue": "Biology (Basel)",
+    "year": 2025,
+    "pmid": "40136509",
+    "doi": "10.3390/biology14030252",
+    "free_access": true
+  },
+  {
+    "id": "pmid40122032",
+    "title": "Dapagliflozin Treatment Attenuates the Interaction between the Renal Sodium Chloride Co-Transporter and Ezrin in Hypertensive Diabetic db/db Mice.",
+    "authors": [
+      "Gholam MF",
+      "Alli AA",
+      "Alli A"
+    ],
+    "venue": "Nephron",
+    "year": 2025,
+    "pmid": "40122032",
+    "doi": "10.1159/000543336"
+  },
+  {
+    "id": "pmid39982423",
+    "title": "Activity and function of the endothelial sodium channel is regulated by the effector domain of MARCKS-like protein 1 in mouse aortic endothelial cells.",
+    "authors": [
+      "Yu L",
+      "Bala N",
+      "Nguyen VL",
+      "Kessler L",
+      "LaDisa JF Jr",
+      "Alli AA"
+    ],
+    "venue": "Am J Physiol Cell Physiol",
+    "year": 2025,
+    "pmid": "39982423",
+    "doi": "10.1152/ajpcell"
+  },
+  {
+    "id": "pmid39902374",
+    "title": "Alpha 1-antitrypsin mitigates salt-sensitive hypertension in juvenile mice by reducing diacylglycerol concentrations and protein kinase C activity in kidney membranes.",
+    "authors": [
+      "Dogan YE",
+      "Bala N",
+      "Galban ES",
+      "Lewis RL",
+      "Denslow ND",
+      "Song S",
+      "Alli AA"
+    ],
+    "venue": "Front Mol Biosci",
+    "year": 2025,
+    "pmid": "39902374",
+    "doi": "10.3389/fmolb",
+    "free_access": true
+  },
+  {
+    "id": "pmid39861814",
+    "title": "Activity of Various Cathepsin Proteases and Enrichment of Klotho Protein in the Urine and Urinary Extracellular Vesicles After SARS-CoV-2 Infection.",
+    "authors": [
+      "Bala N",
+      "Rafay RH",
+      "Glover SC",
+      "Alli AA"
+    ],
+    "venue": "Viruses",
     "year": 2024,
-    "abstract": "Novel optimization techniques for training large language models that reduce computational requirements while maintaining performance.",
-    "pdf": "#",
-    "code": "https://github.com/ALLI_GATORS/efficient-llm"
+    "pmid": "39861814",
+    "doi": "10.3390/v17010025",
+    "free_access": true
+  },
+  {
+    "id": "pmid39413095",
+    "title": "Mycobacterium avium inhibits protein kinase C and MARCKS phosphorylation in human cystic fibrosis and non-cystic fibrosis cells.",
+    "authors": [
+      "Kokesh KJ",
+      "Bala N",
+      "Dogan YE",
+      "Nguyen VL",
+      "Costa M",
+      "Alli A"
+    ],
+    "venue": "PLoS One",
+    "year": 2024,
+    "pmid": "39413095",
+    "doi": "10.1371/journal",
+    "free_access": true
+  },
+  {
+    "id": "pmid38791000",
+    "title": "Enrichment of Bioactive Lipids in Urinary Extracellular Vesicles and Evidence of Apoptosis in Kidneys of Hypertensive Diabetic Cathepsin B Knockout Mice after Streptozotocin Treatment.",
+    "authors": [
+      "Schramm WC",
+      "Bala N",
+      "Arekar T",
+      "Malik Z",
+      "Chacko KM",
+      "Lewis RL",
+      "Denslow ND",
+      "Scindia Y",
+      "Alli AA"
+    ],
+    "venue": "Biomedicines",
+    "year": 2024,
+    "pmid": "38791000",
+    "doi": "10.3390/biomedicines12051038",
+    "free_access": true
+  },
+  {
+    "id": "pmid38499276",
+    "title": "Functional and metabolomic analysis of urinary extracellular vesicles from juvenile mice with renal compensatory hypertrophy.",
+    "authors": [
+      "Aly R",
+      "Darwish S",
+      "Bala N",
+      "Ebrahim A",
+      "Shoemaker LR",
+      "McCray J",
+      "Garrett TJ",
+      "Alli AA"
+    ],
+    "venue": "Biochim Biophys Acta Mol Basis Dis",
+    "year": 2024,
+    "pmid": "38499276",
+    "doi": "10.1016/j",
+    "free_access": true
+  },
+  {
+    "id": "pmid38463588",
+    "title": "Dysregulation of kidney proteases in the pathogenesis of hypertension following unilateral nephrectomy in juvenile mice.",
+    "authors": [
+      "Aly R",
+      "Dogan YE",
+      "Bala N",
+      "Lugo C",
+      "Darwish S",
+      "Shoemaker L",
+      "Alli AA"
+    ],
+    "venue": "Am J Transl Res",
+    "year": 2024,
+    "pmid": "38463588",
+    "doi": "10.62347/HONT9617",
+    "free_access": true
+  },
+  {
+    "id": "pmid37634857",
+    "title": "Extracellular vesicles from BALF of pediatric cystic fibrosis and asthma patients increase epithelial sodium channel activity in small airway epithelial cells.",
+    "authors": [
+      "Al-Humiari MA",
+      "Yu L",
+      "Liu LP",
+      "Nouri MZ",
+      "Tuna KM",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "Biochim Biophys Acta Biomembr",
+    "year": 2024,
+    "pmid": "37634857",
+    "doi": "10.1016/j",
+    "free_access": true
+  },
+  {
+    "id": "pmid38186979",
+    "title": "Tempol treatment normalizes membrane expression of epithelial transport proteins in the kidney of salt-loaded hypertensive diabetic db/db mice.",
+    "authors": [
+      "Dogan YE",
+      "Bala N",
+      "Chacko KM",
+      "Tuna KM",
+      "Alli AA"
+    ],
+    "venue": "Am J Transl Res",
+    "year": 2023,
+    "pmid": "38186979",
+    "doi": null,
+    "free_access": true
+  },
+  {
+    "id": "pmid37706232",
+    "title": "Male kidney-specific BMAL1 knockout mice are protected from K<sup>+</sup>-deficient, high-salt diet-induced blood pressure increases.",
+    "authors": [
+      "Crislip GR",
+      "Costello HM",
+      "Juffre A",
+      "Cheng KY",
+      "Lynch IJ",
+      "Johnston JG",
+      "Drucker CB",
+      "Bratanatawira P",
+      "Agarwal A",
+      "Mendez VM",
+      "Thelwell RS",
+      "Douma LG",
+      "Wingo CS",
+      "Alli AA",
+      "Scindia YM",
+      "Gumz ML"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2023,
+    "pmid": "37706232",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid37627022",
+    "title": "Extracellular Vesicles: Investigating the Pathophysiology of Diabetes-Associated Hypertension and Diabetic Nephropathy.",
+    "authors": [
+      "Alli AA"
+    ],
+    "venue": "Biology (Basel)",
+    "year": 2023,
+    "pmid": "37627022",
+    "doi": "10.3390/biology12081138",
+    "type": "Review",
+    "free_access": true
+  },
+  {
+    "id": "pmid37569859",
+    "title": "Augmentation of Cathepsin Isoforms in Diabetic db/db Mouse Kidneys Is Associated with an Increase in Renal MARCKS Expression and Proteolysis.",
+    "authors": [
+      "Gholam MF",
+      "Bala N",
+      "Dogan YE",
+      "Alli AA"
+    ],
+    "venue": "Int J Mol Sci",
+    "year": 2023,
+    "pmid": "37569859",
+    "doi": "10.3390/ijms241512484",
+    "free_access": true
+  },
+  {
+    "id": "pmid37239160",
+    "title": "Decreased MARCKS Protein Expression in Kidney Cortex Membrane Fractions of Cathepsin B Knockout Mice Is Associated with Reduced Lysophosphatidylcholine and Protein Kinase C Activity.",
+    "authors": [
+      "Kawakibi T",
+      "Bala N",
+      "Liu LP",
+      "Searcy LA",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "Biomedicines",
+    "year": 2023,
+    "pmid": "37239160",
+    "doi": "10.3390/biomedicines11051489",
+    "free_access": true
+  },
+  {
+    "id": "pmid36830842",
+    "title": "Metformin Alleviates Diabetes-Associated Hypertension by Attenuating the Renal Epithelial Sodium Channel.",
+    "authors": [
+      "Scindia YM",
+      "Gholam MF",
+      "Waleed A",
+      "Liu LP",
+      "Chacko KM",
+      "Desai D",
+      "Lopez JP",
+      "Malik Z",
+      "Schramm WC",
+      "Morales AG",
+      "Carson-Marino M",
+      "Alli AA"
+    ],
+    "venue": "Biomedicines",
+    "year": 2023,
+    "pmid": "36830842",
+    "doi": "10.3390/biomedicines11020305",
+    "free_access": true
+  },
+  {
+    "id": "pmid36763043",
+    "title": "Metabolic Characterization and Glyceraldehyde-3-Phosphate Dehydrogenase-Dependent Regulation of Epithelial Sodium Channels in hPheo1 Wild-type and SDHB Knockdown Cells.",
+    "authors": [
+      "Bala N",
+      "Yu L",
+      "Liu LP",
+      "Shelton L",
+      "Xu Y",
+      "Ghayee HK",
+      "Alli AA"
+    ],
+    "venue": "Endocrinology",
+    "year": 2023,
+    "pmid": "36763043",
+    "doi": "10.1210/endocr/bqad026"
+  },
+  {
+    "id": "pmid36675169",
+    "title": "COVID-19 Plasma Extracellular Vesicles Increase the Density of Lipid Rafts in Human Small Airway Epithelial Cells.",
+    "authors": [
+      "Darwish S",
+      "Liu LP",
+      "Robinson TO",
+      "Tarugu S",
+      "Owings AH",
+      "Glover SC",
+      "Alli AA"
+    ],
+    "venue": "Int J Mol Sci",
+    "year": 2023,
+    "pmid": "36675169",
+    "doi": "10.3390/ijms24021654",
+    "free_access": true
+  },
+  {
+    "id": "pmid36674924",
+    "title": "Dapagliflozin Treatment Augments Bioactive Phosphatidylethanolamine Concentrations in Kidney Cortex Membrane Fractions of Hypertensive Diabetic db/db Mice and Alters the Density of Lipid Rafts in Mouse Proximal Tubule Cells.",
+    "authors": [
+      "Gholam MF",
+      "Liu LP",
+      "Searcy LA",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "Int J Mol Sci",
+    "year": 2023,
+    "pmid": "36674924",
+    "doi": "10.3390/ijms24021408",
+    "free_access": true
+  },
+  {
+    "id": "pmid36566913",
+    "title": "Kidney tubular epithelial cell ferroptosis links glomerular injury to tubulointerstitial pathology in lupus nephritis.",
+    "authors": [
+      "Alli AA",
+      "Desai D",
+      "Elshika A",
+      "Conrad M",
+      "Proneth B",
+      "Clapp W",
+      "Atkinson C",
+      "Segal M",
+      "Searcy LA",
+      "Denslow ND",
+      "Bolisetty S",
+      "Mehrad B",
+      "Morel L",
+      "Scindia Y"
+    ],
+    "venue": "Clin Immunol",
+    "year": 2023,
+    "pmid": "36566913",
+    "doi": "10.1016/j",
+    "free_access": true
+  },
+  {
+    "id": "pmid36671451",
+    "title": "Human Alpha-1 Antitrypsin Attenuates ENaC and MARCKS and Lowers Blood Pressure in Hypertensive Diabetic db/db Mice.",
+    "authors": [
+      "Lugo CI",
+      "Liu LP",
+      "Bala N",
+      "Morales AG",
+      "Gholam MF",
+      "Abchee JC",
+      "Elmoujahid N",
+      "Elshikha AS",
+      "Avdiaj R",
+      "Searcy LA",
+      "Denslow ND",
+      "Song S",
+      "Alli AA"
+    ],
+    "venue": "Biomolecules",
+    "year": 2022,
+    "pmid": "36671451",
+    "doi": "10.3390/biom13010066",
+    "free_access": true
+  },
+  {
+    "id": "pmid36499728",
+    "title": "Lipid Profiles of Urinary Extracellular Vesicles Released during the Inactive and Active Phases of Aged Male Mice with Spontaneous Hypertension.",
+    "authors": [
+      "Lopez JP",
+      "Nouri MZ",
+      "Ebrahim A",
+      "Chacko KM",
+      "Schramm WC",
+      "Gholam MF",
+      "Ozrazgat-Baslanti T",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "Int J Mol Sci",
+    "year": 2022,
+    "pmid": "36499728",
+    "doi": "10.3390/ijms232315397",
+    "free_access": true
+  },
+  {
+    "id": "pmid36440216",
+    "title": "Case report: Two sisters with a germline <em>CHEK2</em> variant and distinct endocrine neoplasias.",
+    "authors": [
+      "Vallera RD",
+      "Ding Y",
+      "Hatanpaa KJ",
+      "Bishop JA",
+      "Mirfakhraee S",
+      "Alli AA",
+      "Tevosian SG",
+      "Tabebi M",
+      "Gimm O",
+      "Söderkvist P",
+      "Estrada-Zuniga C",
+      "Dahia PLM",
+      "Ghayee HK"
+    ],
+    "venue": "Front Endocrinol (Lausanne)",
+    "year": 2022,
+    "pmid": "36440216",
+    "doi": "10.3389/fendo",
+    "free_access": true
+  },
+  {
+    "id": "pmid36430437",
+    "title": "C Type Natriuretic Peptide Receptor Activation Inhibits Sodium Channel Activity in Human Aortic Endothelial Cells by Activating the Diacylglycerol-Protein Kinase C Pathway.",
+    "authors": [
+      "Yu L",
+      "Nouri MZ",
+      "Liu LP",
+      "Bala N",
+      "Denslow ND",
+      "LaDisa JF Jr",
+      "Alli AA"
+    ],
+    "venue": "Int J Mol Sci",
+    "year": 2022,
+    "pmid": "36430437",
+    "doi": "10.3390/ijms232213959",
+    "free_access": true
+  },
+  {
+    "id": "pmid36374911",
+    "title": "Extracellular vesicles from focal segmental glomerulosclerosis pediatric patients induce STAT3 activation and mesangial cell proliferation.",
+    "authors": [
+      "Pekkucuksen NT",
+      "Liu LP",
+      "Aly R",
+      "Shoemaker LR",
+      "Alli AA"
+    ],
+    "venue": "PLoS One",
+    "year": 2022,
+    "pmid": "36374911",
+    "doi": "10.1371/journal",
+    "free_access": true
+  },
+  {
+    "id": "pmid35053120",
+    "title": "Iron Inhibits the Translation and Activity of the Renal Epithelial Sodium Channel.",
+    "authors": [
+      "Alli AA",
+      "Yu L",
+      "Wlazlo E",
+      "Kasem S",
+      "Gholam MF",
+      "Desai D",
+      "Lugo CI",
+      "Vaulont S",
+      "Scindia YM"
+    ],
+    "venue": "Biology (Basel)",
+    "year": 2022,
+    "pmid": "35053120",
+    "doi": "10.3390/biology11010123",
+    "free_access": true
+  },
+  {
+    "id": "pmid34944449",
+    "title": "Tempol Alters Urinary Extracellular Vesicle Lipid Content and Release While Reducing Blood Pressure during the Development of Salt-Sensitive Hypertension.",
+    "authors": [
+      "Chacko KM",
+      "Nouri MZ",
+      "Schramm WC",
+      "Malik Z",
+      "Liu LP",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "Biomolecules",
+    "year": 2021,
+    "pmid": "34944449",
+    "doi": "10.3390/biom11121804",
+    "free_access": true
+  },
+  {
+    "id": "pmid34943250",
+    "title": "The Pharmacological Inhibition of CaMKII Regulates Sodium Chloride Cotransporter Activity in mDCT15 Cells.",
+    "authors": [
+      "Gholam MF",
+      "Ko B",
+      "Ghazi ZM",
+      "Hoover RS",
+      "Alli AA"
+    ],
+    "venue": "Biology (Basel)",
+    "year": 2021,
+    "pmid": "34943250",
+    "doi": "10.3390/biology10121335",
+    "free_access": true
+  },
+  {
+    "id": "pmid34630137",
+    "title": "Transgenic Mice Overexpressing Human Alpha-1 Antitrypsin Exhibit Low Blood Pressure and Altered Epithelial Transport Mechanisms in the Inactive and Active Cycles.",
+    "authors": [
+      "Liu LP",
+      "Gholam MF",
+      "Elshikha AS",
+      "Kawakibi T",
+      "Elmoujahid N",
+      "Moussa HH",
+      "Song S",
+      "Alli AA"
+    ],
+    "venue": "Front Physiol",
+    "year": 2021,
+    "pmid": "34630137",
+    "doi": "10.3389/fphys",
+    "free_access": true
+  },
+  {
+    "id": "pmid34288724",
+    "title": "Increased endothelial sodium channel activity by extracellular vesicles in human aortic endothelial cells: putative role of MLP1 and bioactive lipids.",
+    "authors": [
+      "Nouri MZ",
+      "Yu L",
+      "Liu LP",
+      "Chacko KM",
+      "Denslow ND",
+      "LaDisa JF Jr",
+      "Alli AA"
+    ],
+    "venue": "Am J Physiol Cell Physiol",
+    "year": 2021,
+    "pmid": "34288724",
+    "doi": "10.1152/ajpcell",
+    "free_access": true
+  },
+  {
+    "id": "pmid33080118",
+    "title": "Activation of multiple receptors stimulates extracellular vesicle release from trophoblast cells.",
+    "authors": [
+      "Conrad KP",
+      "Tuna KM",
+      "Mestre CT",
+      "Banwatt ES",
+      "Alli AA"
+    ],
+    "venue": "Physiol Rep",
+    "year": 2020,
+    "pmid": "33080118",
+    "doi": "10.14814/phy2",
+    "free_access": true
+  },
+  {
+    "id": "pmid31803861",
+    "title": "Lipidomic analysis of urinary exosomes from hereditary α-tryptasemia patients and healthy volunteers.",
+    "authors": [
+      "Glover SC",
+      "Nouri MZ",
+      "Tuna KM",
+      "Mendoza Alvarez LB",
+      "Ryan LK",
+      "Shirley JF",
+      "Tang Y",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "FASEB Bioadv",
+    "year": 2019,
+    "pmid": "31803861",
+    "doi": "10.1096/fba",
+    "free_access": true
+  },
+  {
+    "id": "pmid31368174",
+    "title": "Cathepsin B increases ENaC activity leading to hypertension early in nephrotic syndrome.",
+    "authors": [
+      "Larionov A",
+      "Dahlke E",
+      "Kunke M",
+      "Zanon Rodriguez L",
+      "Schiessl IM",
+      "Magnin JL",
+      "Kern U",
+      "Alli AA",
+      "Mollet G",
+      "Schilling O",
+      "Castrop H",
+      "Theilig F"
+    ],
+    "venue": "J Cell Mol Med",
+    "year": 2019,
+    "pmid": "31368174",
+    "doi": "10.1111/jcmm",
+    "free_access": true
+  },
+  {
+    "id": "pmid31364376",
+    "title": "Mal protein stabilizes luminal membrane PLC-β3 and negatively regulates ENaC in mouse cortical collecting duct cells.",
+    "authors": [
+      "Tuna KM",
+      "Liu BC",
+      "Yue Q",
+      "Ghazi ZM",
+      "Ma HP",
+      "Eaton DC",
+      "Alli AA"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2019,
+    "pmid": "31364376",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid31002586",
+    "title": "Human genotyping and an experimental model reveal NPR-C as a possible contributor to morbidity in coarctation of the aorta.",
+    "authors": [
+      "LaDisa JF Jr",
+      "Tomita-Mitchell A",
+      "Stamm K",
+      "Bazan K",
+      "Mahnke DK",
+      "Goetsch MA",
+      "Wegter BJ",
+      "Gerringer JW",
+      "Repp K",
+      "Palygin O",
+      "Zietara AP",
+      "Krolikowski MM",
+      "Eddinger TJ",
+      "Alli AA",
+      "Mitchell ME"
+    ],
+    "venue": "Physiol Genomics",
+    "year": 2019,
+    "pmid": "31002586",
+    "doi": "10.1152/physiolgenomics",
+    "free_access": true
+  },
+  {
+    "id": "pmid30833329",
+    "title": "Modulation of calreticulin expression reveals a novel exosome-mediated mechanism of Z variant α<sub>1</sub>-antitrypsin disposal.",
+    "authors": [
+      "Khodayari N",
+      "Oshins R",
+      "Alli AA",
+      "Tuna KM",
+      "Holliday LS",
+      "Krotova K",
+      "Brantly M"
+    ],
+    "venue": "J Biol Chem",
+    "year": 2019,
+    "pmid": "30833329",
+    "doi": "10.1074/jbc",
+    "free_access": true
+  },
+  {
+    "id": "pmid30760387",
+    "title": "Follicular fluid exosomes act on the bovine oocyte to improve oocyte competence to support development and survival to heat shock.",
+    "authors": [
+      "Rodrigues TA",
+      "Tuna KM",
+      "Alli AA",
+      "Tribulo P",
+      "Hansen PJ",
+      "Koh J",
+      "Paula-Lopes FF"
+    ],
+    "venue": "Reprod Fertil Dev",
+    "year": 2019,
+    "pmid": "30760387",
+    "doi": "10.1071/RD18450"
+  },
+  {
+    "id": "pmid30759025",
+    "title": "Direct and indirect inhibition of the circadian clock protein Per1: effects on ENaC and blood pressure.",
+    "authors": [
+      "Alli A",
+      "Yu L",
+      "Holzworth M",
+      "Richards J",
+      "Cheng KY",
+      "Lynch IJ",
+      "Wingo CS",
+      "Gumz ML"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2019,
+    "pmid": "30759025",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid28711523",
+    "title": "Plant HAK/KUP/KT K<sup>+</sup> transporters: Function and regulation.",
+    "authors": [
+      "Li W",
+      "Xu G",
+      "Alli A",
+      "Yu L"
+    ],
+    "venue": "Semin Cell Dev Biol",
+    "year": 2018,
+    "pmid": "28711523",
+    "doi": "10.1016/j",
+    "type": "Review"
+  },
+  {
+    "id": "pmid28618037",
+    "title": "Hydrogen Peroxide Stimulates Exosomal Cathepsin B Regulation of the Receptor for Advanced Glycation End-Products (RAGE).",
+    "authors": [
+      "Downs CA",
+      "Dang VD",
+      "Johnson NM",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "J Cell Biochem",
+    "year": 2018,
+    "pmid": "28618037",
+    "doi": "10.1002/jcb",
+    "free_access": true
+  },
+  {
+    "id": "pmid28821634",
+    "title": "Lipidomic and proteomic analysis of exosomes from mouse cortical collecting duct cells.",
+    "authors": [
+      "Dang VD",
+      "Jella KK",
+      "Ragheb RRT",
+      "Denslow ND",
+      "Alli AA"
+    ],
+    "venue": "FASEB J",
+    "year": 2017,
+    "pmid": "28821634",
+    "doi": "10.1096/fj",
+    "free_access": true
+  },
+  {
+    "id": "pmid28785264",
+    "title": "Epithelial Sodium Channel-α Mediates the Protective Effect of the TNF-Derived TIP Peptide in Pneumolysin-Induced Endothelial Barrier Dysfunction.",
+    "authors": [
+      "Czikora I",
+      "Alli AA",
+      "Sridhar S",
+      "Matthay MA",
+      "Pillich H",
+      "Hudel M",
+      "Berisha B",
+      "Gorshkov B",
+      "Romero MJ",
+      "Gonzales J",
+      "Wu G",
+      "Huo Y",
+      "Su Y",
+      "Verin AD",
+      "Fulton D",
+      "Chakraborty T",
+      "Eaton DC",
+      "Lucas R"
+    ],
+    "venue": "Front Immunol",
+    "year": 2017,
+    "pmid": "28785264",
+    "doi": "10.3389/fimmu",
+    "free_access": true
+  },
+  {
+    "id": "pmid28468944",
+    "title": "ENaC activity is regulated by calpain-2 proteolysis of MARCKS proteins.",
+    "authors": [
+      "Montgomery DS",
+      "Yu L",
+      "Ghazi ZM",
+      "Thai TL",
+      "Al-Khalili O",
+      "Ma HP",
+      "Eaton DC",
+      "Alli AA"
+    ],
+    "venue": "Am J Physiol Cell Physiol",
+    "year": 2017,
+    "pmid": "28468944",
+    "doi": "10.1152/ajpcell",
+    "free_access": true
+  },
+  {
+    "id": "pmid28283476",
+    "title": "Alveolar nonselective channels are ASIC1a/α-ENaC channels and contribute to AFC.",
+    "authors": [
+      "Trac PT",
+      "Thai TL",
+      "Linck V",
+      "Zou L",
+      "Greenlee M",
+      "Yue Q",
+      "Al-Khalili O",
+      "Alli AA",
+      "Eaton AF",
+      "Eaton DC"
+    ],
+    "venue": "Am J Physiol Lung Cell Mol Physiol",
+    "year": 2017,
+    "pmid": "28283476",
+    "doi": "10.1152/ajplung",
+    "free_access": true
+  },
+  {
+    "id": "pmid28030826",
+    "title": "Inhibition of TRPC6 reduces non-small cell lung cancer cell proliferation and invasion.",
+    "authors": [
+      "Yang LL",
+      "Liu BC",
+      "Lu XY",
+      "Yan Y",
+      "Zhai YJ",
+      "Bao Q",
+      "Doetsch PW",
+      "Deng X",
+      "Thai TL",
+      "Alli AA",
+      "Eaton DC",
+      "Shen BZ",
+      "Ma HP"
+    ],
+    "venue": "Oncotarget",
+    "year": 2017,
+    "pmid": "28030826",
+    "doi": "10.18632/oncotarget",
+    "free_access": true
+  },
+  {
+    "id": "pmid27956381",
+    "title": "Hydrogen peroxide suppresses TRPM4 trafficking to the apical membrane in mouse cortical collecting duct principal cells.",
+    "authors": [
+      "Wu MM",
+      "Zhai YJ",
+      "Li YX",
+      "Hu QQ",
+      "Wang ZR",
+      "Wei SP",
+      "Zou L",
+      "Alli AA",
+      "Thai TL",
+      "Zhang ZR",
+      "Ma HP"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2016,
+    "pmid": "27956381",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid27802315",
+    "title": "Exosomal GAPDH from Proximal Tubule Cells Regulate ENaC Activity.",
+    "authors": [
+      "Jella KK",
+      "Yu L",
+      "Yue Q",
+      "Friedman D",
+      "Duke BJ",
+      "Alli AA"
+    ],
+    "venue": "PLoS One",
+    "year": 2016,
+    "pmid": "27802315",
+    "doi": "10.1371/journal",
+    "free_access": true
+  },
+  {
+    "id": "pmid27645999",
+    "title": "The Lectin-like Domain of TNF Increases ENaC Open Probability through a Novel Site at the Interface between the Second Transmembrane and C-terminal Domains of the α-Subunit.",
+    "authors": [
+      "Lucas R",
+      "Yue Q",
+      "Alli A",
+      "Duke BJ",
+      "Al-Khalili O",
+      "Thai TL",
+      "Hamacher J",
+      "Sridhar S",
+      "Lebedyeva I",
+      "Su H",
+      "Tzotzos S",
+      "Fischer B",
+      "Gameiro AF",
+      "Loose M",
+      "Chakraborty T",
+      "Shabbir W",
+      "Aufy M",
+      "Lemmens-Gruber R",
+      "Eaton DC",
+      "Czikora I"
+    ],
+    "venue": "J Biol Chem",
+    "year": 2016,
+    "pmid": "27645999",
+    "doi": "10.1074/jbc",
+    "free_access": true
+  },
+  {
+    "id": "pmid27422782",
+    "title": "The sodium chloride cotransporter (NCC) and epithelial sodium channel (ENaC) associate.",
+    "authors": [
+      "Mistry AC",
+      "Wynne BM",
+      "Yu L",
+      "Tomilin V",
+      "Yue Q",
+      "Zhou Y",
+      "Al-Khalili O",
+      "Mallick R",
+      "Cai H",
+      "Alli AA",
+      "Ko B",
+      "Mattheyses A",
+      "Bao HF",
+      "Pochynyuk O",
+      "Theilig F",
+      "Eaton DC",
+      "Hoover RS"
+    ],
+    "venue": "Biochem J",
+    "year": 2016,
+    "pmid": "27422782",
+    "doi": "10.1042/BCJ20160312",
+    "free_access": true
+  },
+  {
+    "id": "pmid26483702",
+    "title": "RNA-seq analysis of glycosylation related gene expression in STZ-induced diabetic rat kidney inner medulla.",
+    "authors": [
+      "Qian X",
+      "Li X",
+      "Ilori TO",
+      "Klein JD",
+      "Hughey RP",
+      "Li CJ",
+      "Alli AA",
+      "Guo Z",
+      "Yu P",
+      "Song X",
+      "Chen G"
+    ],
+    "venue": "Front Physiol",
+    "year": 2015,
+    "pmid": "26483702",
+    "doi": "10.3389/fphys",
+    "free_access": true
+  },
+  {
+    "id": "pmid26136560",
+    "title": "Calmodulin and CaMKII modulate ENaC activity by regulating the association of MARCKS and the cytoskeleton with the apical membrane.",
+    "authors": [
+      "Alli AA",
+      "Bao HF",
+      "Liu BC",
+      "Yu L",
+      "Aldrugh S",
+      "Montgomery DS",
+      "Ma HP",
+      "Eaton DC"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2015,
+    "pmid": "26136560",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid25601712",
+    "title": "Acute ethanol induces apoptosis by stimulating TRPC6 via elevation of superoxide in oxygenated podocytes.",
+    "authors": [
+      "Lu XY",
+      "Liu BC",
+      "Wang LH",
+      "Yang LL",
+      "Bao Q",
+      "Zhai YJ",
+      "Alli AA",
+      "Thai TL",
+      "Eaton DC",
+      "Wang WZ",
+      "Ma HP"
+    ],
+    "venue": "Biochim Biophys Acta",
+    "year": 2015,
+    "pmid": "25601712",
+    "doi": "10.1016/j",
+    "free_access": true
+  },
+  {
+    "id": "pmid25029038",
+    "title": "A novel tumor necrosis factor-mediated mechanism of direct epithelial sodium channel activation.",
+    "authors": [
+      "Czikora I",
+      "Alli A",
+      "Bao HF",
+      "Kaftan D",
+      "Sridhar S",
+      "Apell HJ",
+      "Gorshkov B",
+      "White R",
+      "Zimmermann A",
+      "Wendel A",
+      "Pauly-Evers M",
+      "Hamacher J",
+      "Garcia-Gabay I",
+      "Fischer B",
+      "Verin A",
+      "Bagi Z",
+      "Pittet JF",
+      "Shabbir W",
+      "Lemmens-Gruber R",
+      "Chakraborty T",
+      "Lazrak A",
+      "Matthay MA",
+      "Eaton DC",
+      "Lucas R"
+    ],
+    "venue": "Am J Respir Crit Care Med",
+    "year": 2014,
+    "pmid": "25029038",
+    "doi": "10.1164/rccm",
+    "free_access": true
+  },
+  {
+    "id": "pmid24829507",
+    "title": "Cytochalasin E alters the cytoskeleton and decreases ENaC activity in Xenopus 2F3 cells.",
+    "authors": [
+      "Reifenberger MS",
+      "Yu L",
+      "Bao HF",
+      "Duke BJ",
+      "Liu BC",
+      "Ma HP",
+      "Alli AA",
+      "Eaton DC",
+      "Alli AA"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2014,
+    "pmid": "24829507",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid24682449",
+    "title": "Chronic ethanol exposure alters the lung proteome and leads to mitochondrial dysfunction in alveolar type 2 cells.",
+    "authors": [
+      "Alli AA",
+      "Brewer EM",
+      "Montgomery DS",
+      "Ghant MS",
+      "Eaton DC",
+      "Brown LA",
+      "Helms MN"
+    ],
+    "venue": "Am J Physiol Lung Cell Mol Physiol",
+    "year": 2014,
+    "pmid": "24682449",
+    "doi": "10.1152/ajplung",
+    "free_access": true
+  },
+  {
+    "id": "pmid23720343",
+    "title": "Lovastatin attenuates effects of cyclosporine A on tight junctions and apoptosis in cultured cortical collecting duct principal cells.",
+    "authors": [
+      "Liu BC",
+      "Song X",
+      "Lu XY",
+      "Fang CZ",
+      "Wei SP",
+      "Alli AA",
+      "Eaton DC",
+      "Shen BZ",
+      "Li XQ",
+      "Ma HP"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2013,
+    "pmid": "23720343",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid23594824",
+    "title": "WNK4 inhibition of ENaC is independent of Nedd4-2-mediated ENaC ubiquitination.",
+    "authors": [
+      "Yu L",
+      "Cai H",
+      "Yue Q",
+      "Alli AA",
+      "Wang D",
+      "Al-Khalili O",
+      "Bao HF",
+      "Eaton DC"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2013,
+    "pmid": "23594824",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid23335899",
+    "title": "Scanning ion conductance microscopy: a nanotechnology for biological studies in live cells.",
+    "authors": [
+      "Liu BC",
+      "Lu XY",
+      "Song X",
+      "Lei KY",
+      "Alli AA",
+      "Bao HF",
+      "Eaton DC",
+      "Ma HP"
+    ],
+    "venue": "Front Physiol",
+    "year": 2013,
+    "pmid": "23335899",
+    "doi": "10.3389/fphys",
+    "free_access": true
+  },
+  {
+    "id": "pmid23324181",
+    "title": "ENaC is regulated by natriuretic peptide receptor-dependent cGMP signaling.",
+    "authors": [
+      "Guo LJ",
+      "Alli AA",
+      "Eaton DC",
+      "Bao HF"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2013,
+    "pmid": "23324181",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid22791334",
+    "title": "Phosphatidylinositol phosphate-dependent regulation of Xenopus ENaC by MARCKS protein.",
+    "authors": [
+      "Alli AA",
+      "Bao HF",
+      "Alli AA",
+      "Aldrugh Y",
+      "Song JZ",
+      "Ma HP",
+      "Yu L",
+      "Al-Khalili O",
+      "Eaton DC"
+    ],
+    "venue": "Am J Physiol Renal Physiol",
+    "year": 2012,
+    "pmid": "22791334",
+    "doi": "10.1152/ajprenal",
+    "free_access": true
+  },
+  {
+    "id": "pmid22782900",
+    "title": "Cathepsin B is secreted apically from Xenopus 2F3 cells and cleaves the epithelial sodium channel (ENaC) to increase its activity.",
+    "authors": [
+      "Alli AA",
+      "Song JZ",
+      "Al-Khalili O",
+      "Bao HF",
+      "Ma HP",
+      "Alli AA",
+      "Eaton DC"
+    ],
+    "venue": "J Biol Chem",
+    "year": 2012,
+    "pmid": "22782900",
+    "doi": "10.1074/jbc",
+    "free_access": true
+  },
+  {
+    "id": "pmid20564198",
+    "title": "Molecular approaches to examine the phosphorylation state of the C type natriuretic peptide receptor.",
+    "authors": [
+      "Alli AA",
+      "Gower WR Jr"
+    ],
+    "venue": "J Cell Biochem",
+    "year": 2010,
+    "pmid": "20564198",
+    "doi": "10.1002/jcb"
+  },
+  {
+    "id": "pmid19710363",
+    "title": "The C type natriuretic peptide receptor tethers AHNAK1 at the plasma membrane to potentiate arachidonic acid-induced calcium mobilization.",
+    "authors": [
+      "Alli AA",
+      "Gower WR Jr"
+    ],
+    "venue": "Am J Physiol Cell Physiol",
+    "year": 2009,
+    "pmid": "19710363",
+    "doi": "10.1152/ajpcell"
+  },
+  {
+    "id": "pmid19352691",
+    "title": "C-type natriuretic peptide receptor expression in pancreatic alpha cells.",
+    "authors": [
+      "Burgess MD",
+      "Moore KD",
+      "Carter GM",
+      "Alli AA",
+      "Granda CS",
+      "Ichii H",
+      "Ricordi C",
+      "Gower WR Jr"
+    ],
+    "venue": "Histochem Cell Biol",
+    "year": 2009,
+    "pmid": "19352691",
+    "doi": "10.1007/s00418-009-0591-3"
+  },
+  {
+    "id": "pmid18210743",
+    "title": "Four cardiac hormones eliminate up to two-thirds of human breast cancers in athymic mice.",
+    "authors": [
+      "Vesely DL",
+      "Vesely BA",
+      "Eichelbaum EJ",
+      "Sun Y",
+      "Alli AA",
+      "Gower WR Jr"
+    ],
+    "venue": "In Vivo",
+    "year": 2007,
+    "pmid": "18210743",
+    "doi": null
+  },
+  {
+    "id": "pmid18004088",
+    "title": "Four cardiac hormones cause cell death of melanoma cells and inhibit their DNA synthesis.",
+    "authors": [
+      "Vesely BA",
+      "Eichelbaum EJ",
+      "Alli AA",
+      "Sun Y",
+      "Gower WR Jr",
+      "Vesely DL"
+    ],
+    "venue": "Am J Med Sci",
+    "year": 2007,
+    "pmid": "18004088",
+    "doi": "10.1097/MAJ"
+  },
+  {
+    "id": "pmid17591353",
+    "title": "Elimination of up to 80% of human pancreatic adenocarcinomas in athymic mice by cardiac hormones.",
+    "authors": [
+      "Vesely DL",
+      "Eichelbaum EJ",
+      "Sun Y",
+      "Alli AA",
+      "Vesely BA",
+      "Luther SL",
+      "Gower WR Jr"
+    ],
+    "venue": "In Vivo",
+    "year": 2007,
+    "pmid": "17591353",
+    "doi": null
+  },
+  {
+    "id": "pmid17399891",
+    "title": "Four cardiac hormones eliminate 4-fold more human glioblastoma cells than the green mamba snake peptide.",
+    "authors": [
+      "Vesely BA",
+      "Eichelbaum EJ",
+      "Alli AA",
+      "Sun Y",
+      "Gower WR Jr",
+      "Vesely DL"
+    ],
+    "venue": "Cancer Lett",
+    "year": 2007,
+    "pmid": "17399891",
+    "doi": "10.1016/j"
+  },
+  {
+    "id": "pmid17526945",
+    "title": "Four cardiac hormones eliminate up to 82% of human medullary thyroid carcinoma cells within 24 hours.",
+    "authors": [
+      "Eichelbaum EJ",
+      "Vesely BA",
+      "Alli AA",
+      "Sun Y",
+      "Gower WR Jr",
+      "Vesely DL"
+    ],
+    "venue": "Endocrine",
+    "year": 2006,
+    "pmid": "17526945",
+    "doi": "10.1007/s12020-006-0011-6"
+  },
+  {
+    "id": "pmid16534199",
+    "title": "Primary malignant tumors of the heart: four cardiovascular hormones decrease the number and DNA synthesis of human angiosarcoma cells.",
+    "authors": [
+      "Vesely BA",
+      "Alli A",
+      "Song S",
+      "Sanchez-Ramos J",
+      "Fitz SR",
+      "Gower WR Jr",
+      "Vesely DL"
+    ],
+    "venue": "Cardiology",
+    "year": 2006,
+    "pmid": "16534199",
+    "doi": "10.1159/000091816"
+  },
+  {
+    "id": "pmid16648657",
+    "title": "Four peptides decrease human colon adenocarcinoma cell number and DNA synthesis via cyclic GMP.",
+    "authors": [
+      "Gower WR",
+      "Vesely BA",
+      "Alli AA",
+      "Vesely DL"
+    ],
+    "venue": "Int J Gastrointest Cancer",
+    "year": 2005,
+    "pmid": "16648657",
+    "doi": "10.1385/IJGC:36:2:77"
+  },
+  {
+    "id": "pmid14697054",
+    "title": "Positively charged sol-gel coatings for on-line preconcentration of amino acids in capillary electrophoresis.",
+    "authors": [
+      "Li W",
+      "Fries D",
+      "Alli A",
+      "Malik A"
+    ],
+    "venue": "Anal Chem",
+    "year": 2004,
+    "pmid": "14697054",
+    "doi": "10.1021/ac0301696"
+  },
+  {
+    "id": "pmid11866054",
+    "title": "Sol-gel capillary microextraction.",
+    "authors": [
+      "Bigham S",
+      "Medlar J",
+      "Kabir A",
+      "Shende C",
+      "Alli A",
+      "Malik A"
+    ],
+    "venue": "Anal Chem",
+    "year": 2002,
+    "pmid": "11866054",
+    "doi": "10.1021/ac0109523"
   }
 ]
