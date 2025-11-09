@@ -3,16 +3,43 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // theme toggle
+  // theme toggle with auto mode based on time
   const themeToggle = document.getElementById('theme-toggle');
   const root = document.documentElement;
-  // remember theme in localStorage
-  const theme = localStorage.getItem('site-theme');
-  if (theme === 'light') document.documentElement.classList.add('light');
+  
+  // Function to determine theme based on time (6am-6pm = light, otherwise dark)
+  function getAutoTheme() {
+    const hour = new Date().getHours();
+    console.log('Current hour:', hour);
+    return (hour >= 6 && hour < 18) ? 'light' : 'dark';
+  }
+  
+  // Check if user has manually overridden the theme
+  const manualOverride = localStorage.getItem('theme-manual-override');
+  let theme;
+  
+  if (manualOverride === 'true') {
+    // User manually set a preference, use it
+    theme = localStorage.getItem('site-theme');
+    console.log('Using manual theme:', theme);
+  } else {
+    // Auto-detect based on time
+    theme = getAutoTheme();
+    console.log('Using auto theme:', theme);
+  }
+  
+  if (theme === 'light') {
+    document.documentElement.classList.add('light');
+  }
+  
   function toggleTheme(){
     const isLight = document.documentElement.classList.toggle('light');
-    localStorage.setItem('site-theme', isLight ? 'light' : 'dark');
+    const newTheme = isLight ? 'light' : 'dark';
+    localStorage.setItem('site-theme', newTheme);
+    localStorage.setItem('theme-manual-override', 'true');
+    console.log('Theme manually changed to:', newTheme);
   }
+  
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
 
   // simple client-side router for data-driven pages
@@ -49,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = form.get('name');
       const email = form.get('email');
       const message = form.get('message');
-      const mailto = `mailto:lab@example.edu?subject=${encodeURIComponent('Contact from '+name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " <" + email + ">")}`;
+      const mailto = `mailto:aalli@ufl.edu?subject=${encodeURIComponent('Contact from '+name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " <" + email + ">")}`;
       location.href = mailto;
     });
     document.getElementById('contact-reset')?.addEventListener('click', ()=>contactForm.reset());
@@ -72,11 +99,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const el = document.getElementById('people-preview');
     if (!el) return;
     const top = list.slice(0,4);
-    el.innerHTML = top.map(p=>renderPersonCard(p)).join('');
+    el.innerHTML = top.map(p=>{
+      const avatarContent = p.photo 
+        ? `<img src="${p.photo}" alt="${p.fullname}">` 
+        : `<div class="initials">${(p.firstname?.[0] || '') + (p.lastname?.[0] || '')}</div>`;
+      return `
+        <article class="card people-card">
+          <div class="avatar">${avatarContent}</div>
+          <div>
+            <h4>${p.fullname}</h4>
+            ${p.title ? `<p class="muted-small">${p.title}</p>` : ''}
+            <p class="muted-small">${p.department || ''}</p>
+            <p style="margin-top:8px"><a href="mailto:${p.email}">Email</a></p>
+          </div>
+        </article>
+      `;
+    }).join('');
   }
 
   function renderPeopleList(list) {
     const search = document.getElementById('people-search');
+    const currentSection = document.getElementById('current-people');
+    const alumniSection = document.getElementById('alumni-people');
     
     // Call filterPeople initially to show all people
     filterPeople();
@@ -92,75 +136,46 @@ document.addEventListener('DOMContentLoaded', () => {
       const q = (search?.value||'').toLowerCase().trim();
       const filtered = q ? list.filter(p => {
         const searchText = [
-          p.name,
-          p.interests || '',
-          p.title || '',
-          p.role || '',
-          p.current_position || ''
+          p.firstname || '',
+          p.lastname || '',
+          p.fullname || '',
+          p.email || '',
+          p.department || ''
         ].join(' ').toLowerCase();
         return searchText.includes(q);
       }) : list;
       console.log('Filtered people:', filtered);
 
-      // Clear all sections first
-      document.querySelectorAll('.card-grid[data-role]').forEach(section => {
-        section.innerHTML = '';
-      });
-
-      // Split and render current members by role
-      const current = filtered.filter(p => p.status !== 'alumni');
+      // Render current people
+      const current = filtered.filter(p => p.status === 'current');
       console.log('Current members:', current);
-      current.forEach(person => {
-        const section = document.querySelector(`.card-grid[data-role="${person.role}"]`);
-        if (section) {
-          section.innerHTML += renderPersonCard(person);
-        }
-      });
-
-      // Render alumni section
-      const alumniSection = document.querySelector('.card-grid[data-role="Alumni"]');
-      if (alumniSection) {
-        const alumni = filtered.filter(p => p.status === 'alumni');
-        console.log('Alumni:', alumni);
-        alumniSection.innerHTML = alumni.map(p => renderAlumniCard(p)).join('');
+      if (currentSection) {
+        currentSection.innerHTML = current.map(p => renderPersonCard(p)).join('');
       }
 
-      // Hide empty sections
-      document.querySelectorAll('.role-section').forEach(section => {
-        const cards = section.querySelector('.card-grid');
-        if (!cards) return;
-        const hasCards = cards.children.length > 0;
-        section.style.display = hasCards ? 'block' : 'none';
-        // Also hide the heading if section is empty
-        const heading = section.querySelector('h3');
-        if (heading) heading.style.display = hasCards ? 'block' : 'none';
-      });
+      // Render alumni
+      const alumni = filtered.filter(p => p.status === 'alumni');
+      console.log('Alumni:', alumni);
+      if (alumniSection) {
+        alumniSection.innerHTML = alumni.map(p => renderPersonCard(p)).join('');
+      }
     }
   }
 
   function renderPersonCard(p) {
+    // Get initials from firstname and lastname
+    const avatarContent = p.photo 
+      ? `<img src="${p.photo}" alt="${p.fullname}">` 
+      : `<div class="initials">${(p.firstname?.[0] || '') + (p.lastname?.[0] || '')}</div>`;
+    
     return `
       <article class="card people-card">
-        <div class="avatar">${p.photo ? `<img src="${p.photo}" alt="${p.name}">` : initials(p.name)}</div>
+        <div class="avatar">${avatarContent}</div>
         <div>
-          <h4>${p.name}</h4>
-          <p class="muted-small">${p.role} — ${p.title || ''}</p>
-          <p class="muted">${(p.interests||'').slice(0,120)}</p>
-          <p style="margin-top:8px"><a href="mailto:${p.email}">Email</a> • <a href="${p.website||'#'}">Website</a></p>
-        </div>
-      </article>
-    `;
-  }
-
-  function renderAlumniCard(p) {
-    return `
-      <article class="card people-card alumni-card">
-        <div class="avatar">${p.photo ? `<img src="${p.photo}" alt="${p.name}">` : initials(p.name)}</div>
-        <div>
-          <h4>${p.name}</h4>
-          <p class="muted-small">${p.title || ''}</p>
-          ${p.current_position ? `<p class="current-position">Now: ${p.current_position}</p>` : ''}
-          <p style="margin-top:8px"><a href="mailto:${p.email}">Email</a> • <a href="${p.website||'#'}">Website</a></p>
+          <h4>${p.fullname}</h4>
+          ${p.title ? `<p class="muted-small">${p.title}</p>` : ''}
+          <p class="muted-small">${p.department || ''}</p>
+          <p style="margin-top:8px"><a href="mailto:${p.email}">Email</a></p>
         </div>
       </article>
     `;
