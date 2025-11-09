@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // fetch and render people for preview and full page
   console.log('Fetching people data...');
-  fetch('assets/data/people.json').then(r=>r.json()).then(data=>{
+  fetch('./assets/data/people.json').then(r=>r.json()).then(data=>{
     console.log('People data loaded:', data);
     renderPeoplePreview(data.filter(p => p.status !== 'alumni'));
     if (path === 'people.html') {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // fetch publications
   console.log('Fetching publications data...');
-  fetch('assets/data/publications.json').then(r=>r.json()).then(data=>{
+  fetch('./assets/data/publications.json').then(r=>r.json()).then(data=>{
     console.log('Publications data loaded:', data);
     renderPubPreview(data);
     if (path === 'publications.html') {

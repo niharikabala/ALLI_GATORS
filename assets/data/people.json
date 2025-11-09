@@ -7,7 +7,7 @@
     "email": "riley.alligator@example.edu",
     "website": "#",
     "interests": "Human-AI collaboration, model calibration, fairness",
-    "photo": "/assets/Images/Alli.jpg",
+    "photo": "./assets/Images/Alli.jpg",
     "status": "current"
   },
   {
@@ -18,7 +18,7 @@
     "email": "aria.taylor@example.edu",
     "website": "#",
     "interests": "Robustness, interpretability, user studies",
-    "photo": "/assets/Images/people/person1.jpg",
+    "photo": "./assets/Images/people/person1.jpg",
     "status": "current"
   },
   {
@@ -29,7 +29,7 @@
     "email": "alex.student@example.edu",
     "website": "#",
     "interests": "Interactive ML, human-centered AI",
-    "photo": "/assets/Images/people/person2.jpg",
+    "photo": "./assets/Images/people/person2.jpg",
     "status": "current"
   },
   {
@@ -40,7 +40,7 @@
     "email": "jordan.lee@example.edu",
     "website": "#",
     "interests": "Privacy-preserving ML, federated learning",
-    "photo": "/assets/Images/people/person3.jpg",
+    "photo": "./assets/Images/people/person3.jpg",
     "status": "current"
   },
   {
@@ -51,7 +51,7 @@
     "email": "morgan.reyes@example.edu",
     "website": "#",
     "interests": "Research ops, reproduction, outreach",
-    "photo": "/assets/Images/people/person4.jpg",
+    "photo": "./assets/Images/people/person4.jpg",
     "status": "current"
   },
   {
@@ -62,7 +62,7 @@
     "email": "taylor.kim@example.com",
     "website": "#",
     "interests": "Deploying ML in production",
-    "photo": "/assets/Images/people/person5.jpg",
+    "photo": "./assets/Images/people/person5.jpg",
     "status": "alumni",
     "current_position": "Senior ML Engineer at IndustryX"
   },
