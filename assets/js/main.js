@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Set active navigation link based on current page
+  setActiveNavLink();
+
   // theme toggle with auto mode based on time
   const themeToggle = document.getElementById('theme-toggle');
   const root = document.documentElement;
@@ -300,6 +303,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function initials(name){
     return name.split(' ').map(s=>s[0]).slice(0,2).join('').toUpperCase();
+  }
+
+  function setActiveNavLink() {
+    // Get current page from URL
+    const path = window.location.pathname;
+    const page = path.split('/').pop() || 'index.html';
+    
+    // Remove all active classes first
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.classList.remove('active');
+    });
+    
+    // Add active class to current page link
+    const currentLink = document.querySelector(`.main-nav a[href*="${page}"]`);
+    if (currentLink) {
+      currentLink.classList.add('active');
+    } else if (page === '' || page === '/') {
+      // If we're at root, activate Home
+      const homeLink = document.querySelector('.main-nav a[href*="index.html"]');
+      if (homeLink) homeLink.classList.add('active');
+    }
   }
 
 });
