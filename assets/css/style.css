@@ -176,10 +176,19 @@ a:hover {
 .main-nav a {
   color: var(--muted);
   text-decoration: none;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .main-nav a:hover {
   color: var(--text);
+}
+
+.main-nav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
 }
 
 /* Search and filters */
